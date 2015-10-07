@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tui.net", "tui.net\tui.net.csproj", "{ED21F316-CA37-4FC7-A385-A38730199AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polyomino", "polyomino\polyomino.csproj", "{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contega", "Contega\Contega.csproj", "{0EFE4BED-3CC0-4FE0-A0C9-BBD5979ED6B6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED21F316-CA37-4FC7-A385-A38730199AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED21F316-CA37-4FC7-A385-A38730199AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED21F316-CA37-4FC7-A385-A38730199AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED21F316-CA37-4FC7-A385-A38730199AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFE4BED-3CC0-4FE0-A0C9-BBD5979ED6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFE4BED-3CC0-4FE0-A0C9-BBD5979ED6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFE4BED-3CC0-4FE0-A0C9-BBD5979ED6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFE4BED-3CC0-4FE0-A0C9-BBD5979ED6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

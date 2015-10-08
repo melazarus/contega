@@ -17,6 +17,11 @@ namespace tui.net
             ForegroundColor = foregroundColor;
         }
 
+        public TextPixel Clone()
+        {
+            return new TextPixel(Character, BackgroundColor, ForegroundColor);
+        }
+
         public bool Equals(TextPixel obj)
         {
             return (obj.BackgroundColor.Equals(BackgroundColor) &&

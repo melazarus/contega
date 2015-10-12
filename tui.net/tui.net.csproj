@@ -41,11 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextBitmap.cs" />
-    <Compile Include="TextImage.cs" />
-    <Compile Include="TextLayer.cs" />
-    <Compile Include="TextPixel.cs" />
+    <Compile Include="Domain\TextBitmap.cs" />
+    <Compile Include="Domain\TextImage.cs" />
+    <Compile Include="Domain\TextLayer.cs" />
+    <Compile Include="Domain\TextPixel.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

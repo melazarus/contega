@@ -26,7 +26,7 @@ namespace Contega
         /// <summary>
         /// A 2d array of tetromio enums
         /// </summary>
-        object Grid { get; }
+        IGameGrid Grid { get; }
 
         /// <summary>
         /// The current score

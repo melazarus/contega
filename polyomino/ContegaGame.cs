@@ -29,7 +29,7 @@ namespace Contega
             throw new System.NotImplementedException();
         }
 
-        public object Grid { get; }
+        public IGameGrid Grid { get; }
         public int Score { get; }
         public int Level { get; }
         public bool GameOver { get; }

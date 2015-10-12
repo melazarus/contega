@@ -7,10 +7,17 @@ namespace tui.net
     {
         private readonly TextPixel[] _pixels;
 
+        public TextBitmap(int width, int height)
+        {
+            Width = width;
+            Height = height;
+            _pixels = new TextPixel[Width*Height];
+        }
+
         public TextPixel this[int x, int y]
         {
-            get { return _pixels[y * Width + x]; }
-            set { _pixels[y * Width + x] = value; }
+            get { return _pixels[y*Width + x]; }
+            set { _pixels[y*Width + x] = value; }
         }
 
         public TextPixel this[int index]
@@ -23,14 +30,8 @@ namespace tui.net
 
         public int Height { get; set; }
 
-        public TextBitmap(int width, int height)
-        {
-            Width = width;
-            Height = height;
-            _pixels = new TextPixel[Width * Height];
-        }
-
-        public static TextBitmap GenerateFromString(string text, ConsoleColor? foreground = null, ConsoleColor? background = null)
+        public static TextBitmap GenerateFromString(string text, ConsoleColor? foreground = null,
+            ConsoleColor? background = null)
         {
             var lines = SplitToLines(text);
             var height = lines.Length;
@@ -60,7 +61,7 @@ namespace tui.net
         internal TextBitmap Clone()
         {
             var newOBject = new TextBitmap(Width, Height);
-            for (int i = 0; i < _pixels.Length; i++)
+            for (var i = 0; i < _pixels.Length; i++)
             {
                 newOBject[i] = this[i].Clone();
             }

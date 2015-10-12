@@ -5,8 +5,8 @@ namespace Contega.Interfaces
     public class RandomGenerator : IRandomGenerator
     {
         private readonly int[] _bag;
-        private int _bagPointer;
         private readonly Random _random;
+        private int _bagPointer;
 
         public RandomGenerator(int itemsInBag)
         {
@@ -30,8 +30,8 @@ namespace Contega.Interfaces
         }
 
         /// <summary>
-        /// Return the next block and advance the pointer.
-        /// If there are no more blocks in the bag a reset will happen
+        ///     Return the next block and advance the pointer.
+        ///     If there are no more blocks in the bag a reset will happen
         /// </summary>
         /// <returns></returns>
         public int Next()
@@ -40,8 +40,8 @@ namespace Contega.Interfaces
         }
 
         /// <summary>
-        /// Return the next block without advancing the pointer.
-        /// If there are no more blocks in the bag a reset will happen
+        ///     Return the next block without advancing the pointer.
+        ///     If there are no more blocks in the bag a reset will happen
         /// </summary>
         /// <returns></returns>
         public int Peek()

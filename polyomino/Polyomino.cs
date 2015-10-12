@@ -4,10 +4,6 @@ namespace Contega
 {
     internal class Polyomino : IPolyomino
     {
-        public int Width { get; }
-        public int Height { get; }
-        public int Id { get; }
-
         // I 4,4,{0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0}
         // J 3,3,{1,0,0,1,1,1,0,0,0}
         // L 3,3,{0,0,1,1,1,1,0,0,0}
@@ -22,6 +18,10 @@ namespace Contega
             Width = width;
             Height = height;
         }
+
+        public int Width { get; }
+        public int Height { get; }
+        public int Id { get; }
 
         public int[,] GetRotated(Rotation angle)
         {

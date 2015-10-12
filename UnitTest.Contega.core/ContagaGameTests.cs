@@ -7,14 +7,14 @@ namespace UnitTest.Contega.core
     public class ContagaGameTests
     {
         [TestMethod]
-        [ExpectedException(typeof(GridToSmallException))]
+        [ExpectedException(typeof (GridToSmallException))]
         public void New_ToNarrow_GridToSmallException()
         {
             new ContegaGame(9, 22);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(GridToSmallException))]
+        [ExpectedException(typeof (GridToSmallException))]
         public void New_ToShort_GridToSmallException()
         {
             new ContegaGame(10, 21);
@@ -39,10 +39,11 @@ namespace UnitTest.Contega.core
             Assert.IsNotNull(block);
         }
 
-        // test if first block is there
-        // test is second block is there
-        // test if first 7 blocks contain 7 different values
         // test if tetromino drops on tick
+        // test if first 7 blocks contain 7 different values
+        // test is second block is there
+
+        // test if first block is there
         // test if tetromino stops dropping at bottom
         // test if tetromino stop dropping when hitting other
         // test if move left works

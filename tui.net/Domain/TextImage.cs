@@ -7,6 +7,15 @@ namespace tui.net
     {
         private List<TextLayer> _layers;
 
+        public TextImage(int width, int height)
+        {
+            _layers = new List<TextLayer>();
+            Height = height;
+            Width = width;
+
+            AddLayer("Background");
+        }
+
         public TextLayer this[int index]
         {
             get { return _layers[index]; }
@@ -19,18 +28,9 @@ namespace tui.net
             private set { }
         }
 
-        public int Height { get; private set; }
+        public int Height { get; }
 
-        public int Width { get; private set; }
-
-        public TextImage(int width, int height)
-        {
-            _layers = new List<TextLayer>();
-            Height = height;
-            Width = width;
-
-            AddLayer("Background");
-        }
+        public int Width { get; }
 
         public TextLayer AddLayer(string Name)
         {

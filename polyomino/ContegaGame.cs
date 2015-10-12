@@ -1,4 +1,5 @@
-﻿using Contega.Interfaces;
+﻿using System;
+using Contega.Interfaces;
 
 namespace Contega
 {
@@ -7,7 +8,6 @@ namespace Contega
         private const int MinGridWidth = 10;
         private const int MinGridHeight = 22;
         private const int TetrominoBlockCount = 7;
-        public IRandomGenerator RandomGenerator { get; set; }
 
         public ContegaGame(int width, int height)
         {
@@ -18,28 +18,30 @@ namespace Contega
             RandomGenerator = new RandomGenerator(TetrominoBlockCount);
         }
 
+        public IRandomGenerator RandomGenerator { get; set; }
+
         public int Tick()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         //todo rename to tryMove
         public bool Move(object LeftRight)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Reset()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public bool TryRotate(object direction)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public IGameGrid Grid { get; private set; }
+        public IGameGrid Grid { get; }
         public int Score { get; }
         public int Level { get; }
         public bool GameOver { get; }

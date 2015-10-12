@@ -43,12 +43,12 @@
     <Compile Include="ContegaGame.cs" />
     <Compile Include="Exceptions\GridToSmallException.cs" />
     <Compile Include="GameGrid.cs" />
-    <Compile Include="IContegaGame.cs" />
-    <Compile Include="IGameGrid.cs" />
-    <Compile Include="IPolyomino.cs" />
+    <Compile Include="Interfaces\IContegaGame.cs" />
+    <Compile Include="Interfaces\IGameGrid.cs" />
+    <Compile Include="Interfaces\IPolyomino.cs" />
     <Compile Include="Polyomino.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rotation.cs" />
+    <Compile Include="Enums\Rotation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

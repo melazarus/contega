@@ -20,6 +20,7 @@ namespace Contega
             throw new System.NotImplementedException();
         }
 
+        //todo rename to tryMove
         public bool Move(object LeftRight)
         {
             throw new System.NotImplementedException();
@@ -41,5 +42,6 @@ namespace Contega
         public bool GameOver { get; }
         public IPolyomino NextBlock { get; }
         public IPolyomino ActiveBlock { get; }
+        //TODO: store rotation and coordinates for next/active block
     }
 }

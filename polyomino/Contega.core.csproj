@@ -7,8 +7,8 @@
     <ProjectGuid>{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>polyomino</RootNamespace>
-    <AssemblyName>polyomino</AssemblyName>
+    <RootNamespace>Contega</RootNamespace>
+    <AssemblyName>Contega</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

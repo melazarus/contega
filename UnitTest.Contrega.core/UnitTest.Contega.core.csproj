@@ -6,8 +6,8 @@
     <ProjectGuid>{D73A860D-F278-45EB-98AC-4EAF405321E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTest.Contrega.core</RootNamespace>
-    <AssemblyName>UnitTest.Contrega.core</AssemblyName>
+    <RootNamespace>UnitTest.Contega.core</RootNamespace>
+    <AssemblyName>UnitTest.Contega.core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

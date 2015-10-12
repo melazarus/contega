@@ -1,7 +1,7 @@
 ﻿//TODO: allow swap current block with next block
 //TODO: allow initial seed of grid with random data or with predefined set of data
 //TODO: allow lines to be added on the bottom
-namespace polyomino
+namespace Contega
 {
     public interface IContegaGame
     {

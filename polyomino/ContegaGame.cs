@@ -1,4 +1,4 @@
-﻿namespace polyomino
+﻿namespace Contega
 {
     internal class ContegaGame : IContegaGame
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tui.net", "tui.net\tui.net.csproj", "{ED21F316-CA37-4FC7-A385-A38730199AC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tui.net", "tui.net\Tui.net.csproj", "{ED21F316-CA37-4FC7-A385-A38730199AC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contega.core", "polyomino\Contega.core.csproj", "{F18B0C59-6E04-4D1E-9A39-76B2DB9C8E4D}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contega", "Contega\Contega.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.tui.net", "UnitTests.tui.net\UnitTests.tui.net.csproj", "{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Contrega.core", "UnitTest.Contrega.core\UnitTest.Contrega.core.csproj", "{D73A860D-F278-45EB-98AC-4EAF405321E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Contega.core", "UnitTest.Contrega.core\UnitTest.Contega.core.csproj", "{D73A860D-F278-45EB-98AC-4EAF405321E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{ED21F316-CA37-4FC7-A385-A38730199AC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tui.net</RootNamespace>
-    <AssemblyName>tui.net</AssemblyName>
+    <RootNamespace>Tui.net</RootNamespace>
+    <AssemblyName>Tui.net</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

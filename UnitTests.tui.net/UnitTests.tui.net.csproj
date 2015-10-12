@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\tui.net\tui.net.csproj">
+    <ProjectReference Include="..\tui.net\Tui.net.csproj">
       <Project>{ED21F316-CA37-4FC7-A385-A38730199AC3}</Project>
-      <Name>tui.net</Name>
+      <Name>Tui.net</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

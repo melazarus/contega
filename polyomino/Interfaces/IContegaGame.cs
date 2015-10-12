@@ -57,6 +57,8 @@ namespace Contega
         /// <summary>
         /// The the next type of tetromino
         /// </summary>
-        object NextBlock { get; }
+        IPolyomino NextBlock { get; }
+
+        IPolyomino ActiveBlock { get; }
     }
 }

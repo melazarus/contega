@@ -39,6 +39,7 @@ namespace Contega
         public int Score { get; }
         public int Level { get; }
         public bool GameOver { get; }
-        public object NextBlock { get; }
+        public IPolyomino NextBlock { get; }
+        public IPolyomino ActiveBlock { get; }
     }
 }

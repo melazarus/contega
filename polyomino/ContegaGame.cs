@@ -1,11 +1,14 @@
 ﻿using System.CodeDom;
+using Contega.Interfaces;
 
 namespace Contega
 {
     public class ContegaGame : IContegaGame
     {
-        const int MinGridWidth= 10;
+        private const int MinGridWidth = 10;
         private const int MinGridHeight = 22;
+        private const int TetrominoBlockCount = 7;
+        public IRandomGenerator RandomGenerator { get; set; }
 
         public ContegaGame(int width, int height)
         {
@@ -13,6 +16,7 @@ namespace Contega
             if (height < MinGridHeight) throw new GridToSmallException();
 
             Grid = new GameGrid(width,height);
+            RandomGenerator = new RandomGenerator(TetrominoBlockCount);
         }
 
         public int Tick()

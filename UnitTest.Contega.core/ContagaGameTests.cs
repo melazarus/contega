@@ -1,4 +1,5 @@
 ﻿using Contega;
+using Contega.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest.Contega.core
@@ -27,6 +28,16 @@ namespace UnitTest.Contega.core
 
             Assert.AreEqual(10, game.Grid.Width);
             Assert.AreEqual(22, game.Grid.Height);
+        }
+
+        [TestMethod]
+        public void ActiveBlock_NotNull()
+        {
+            var game = new ContegaGame(10, 22);
+            
+            var block = game.ActiveBlock;
+
+            Assert.IsNotNull(block);
         }
 
         // test if first block is there

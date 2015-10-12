@@ -1,8 +1,8 @@
-﻿    using System;
+﻿        using System;
 
 namespace Contega.Interfaces
 {
-    class RandomGenerator : IRandomGenerator
+    public class RandomGenerator : IRandomGenerator
     {
         private readonly int[] _bag;
         private int _bagPointer;
@@ -29,15 +29,44 @@ namespace Contega.Interfaces
             }
         }
 
+        /// <summary>
+        /// Return the next block and advance the pointer.
+        /// If there are no more blocks in the bag a reset will happen
+        /// </summary>
+        /// <returns></returns>
         public int Next()
         {
-            if (_bagPointer < _bag.Length)
-            {
-                return _bag[_bagPointer++];
-            }
+            return GetNextItemFromBag(true);
+        }
 
-            Reset();
-            return Next();
+        /// <summary>
+        /// Return the next block without advancing the pointer.
+        /// If there are no more blocks in the bag a reset will happen
+        /// </summary>
+        /// <returns></returns>
+        public int Peek()
+        {
+            return GetNextItemFromBag(false);
+        }
+
+        private int GetNextItemFromBag(bool advance = true)
+        {
+            while (true)
+            {
+                if (!BagEmpty())
+                {
+                    var returnValue = _bag[_bagPointer];
+                    if (advance) _bagPointer++;
+                    return returnValue;
+                }
+
+                Reset();
+            }
+        }
+
+        private bool BagEmpty()
+        {
+            return _bagPointer >= _bag.Length;
         }
     }
 }

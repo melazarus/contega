@@ -11,5 +11,6 @@ namespace Contega.Interfaces
     {
         void Reset();
         int Next();
+        int Peek();
     }
 }

@@ -10,6 +10,7 @@ namespace Contega.Interfaces
 
         public RandomGenerator(int itemsInBag)
         {
+            if (itemsInBag < 1) throw new ArgumentException("items should be greater than 0");
             _random = new Random();
             _bag = new int[itemsInBag];
             for (var i = 0; i < _bag.Length; i++) _bag[i] = i;

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ContegaGame.cs" />
     <Compile Include="Exceptions\GridToSmallException.cs" />
+    <Compile Include="GameGrid.cs" />
     <Compile Include="IContegaGame.cs" />
     <Compile Include="IGameGrid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

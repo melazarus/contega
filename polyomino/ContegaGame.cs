@@ -1,5 +1,5 @@
-﻿using System;
-using Contega.Interfaces;
+﻿using Contega.Interfaces;
+using System;
 
 namespace Contega
 {
@@ -16,6 +16,12 @@ namespace Contega
 
             Grid = new GameGrid(width, height);
             RandomGenerator = new RandomGenerator(TetrominoBlockCount);
+
+            LoadTetrominos();
+        }
+
+        private void LoadTetrominos()
+        {
         }
 
         public IRandomGenerator RandomGenerator { get; set; }

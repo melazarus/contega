@@ -7,14 +7,14 @@ namespace UnitTest.Contega.core
     public class ContagaGameTests
     {
         [TestMethod]
-        [ExpectedException(typeof (GridToSmallException))]
+        [ExpectedException(typeof(GridToSmallException))]
         public void New_ToNarrow_GridToSmallException()
         {
             new ContegaGame(9, 22);
         }
 
         [TestMethod]
-        [ExpectedException(typeof (GridToSmallException))]
+        [ExpectedException(typeof(GridToSmallException))]
         public void New_ToShort_GridToSmallException()
         {
             new ContegaGame(10, 21);

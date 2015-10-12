@@ -47,5 +47,24 @@ namespace UnitTest.Contega.core
 
             Assert.AreEqual(7, values.Distinct().Count());
         }
+
+        [TestMethod]
+        public void Next_nTimes_Random()
+        {
+            //This is tricky, this test may give false negatives.
+            var count = 100;
+            var sameCount = 0;
+            var rnd = new RandomGenerator(count);
+            var values = new List<int>();
+            for (var i = 0; i < count; i++)
+            {
+                var value = rnd.Next();
+                if (value == i) sameCount++;
+            }
+
+            Assert.AreNotEqual(count, sameCount);
+        }
+
+        //TODO: Find a way to test the Reset
     }
 }

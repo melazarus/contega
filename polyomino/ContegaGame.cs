@@ -1,7 +1,19 @@
-﻿namespace Contega
+﻿using System.CodeDom;
+
+namespace Contega
 {
-    internal class ContegaGame : IContegaGame
+    public class ContegaGame : IContegaGame
     {
+        const int MinGridWidth= 10;
+        private const int MinGridHeight = 22;
+
+        public ContegaGame(int width, int height)
+        {
+            if(width < MinGridWidth) throw new GridToSmallException();
+            if (height < MinGridHeight) throw new GridToSmallException();
+
+        }
+
         public int Tick()
         {
             throw new System.NotImplementedException();

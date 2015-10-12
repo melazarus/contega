@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contega", "Contega\Contega.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.tui.net", "UnitTests.tui.net\UnitTests.tui.net.csproj", "{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Contrega.core", "UnitTest.Contrega.core\UnitTest.Contrega.core.csproj", "{D73A860D-F278-45EB-98AC-4EAF405321E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73A860D-F278-45EB-98AC-4EAF405321E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73A860D-F278-45EB-98AC-4EAF405321E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73A860D-F278-45EB-98AC-4EAF405321E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73A860D-F278-45EB-98AC-4EAF405321E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

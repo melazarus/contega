@@ -1,4 +1,4 @@
-﻿        using System;
+﻿using System;
 
 namespace Contega.Interfaces
 {
@@ -59,7 +59,6 @@ namespace Contega.Interfaces
                     if (advance) _bagPointer++;
                     return returnValue;
                 }
-
                 Reset();
             }
         }

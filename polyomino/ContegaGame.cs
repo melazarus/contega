@@ -1,5 +1,4 @@
-﻿using System.CodeDom;
-using Contega.Interfaces;
+﻿using Contega.Interfaces;
 
 namespace Contega
 {
@@ -12,10 +11,10 @@ namespace Contega
 
         public ContegaGame(int width, int height)
         {
-            if(width < MinGridWidth) throw new GridToSmallException();
+            if (width < MinGridWidth) throw new GridToSmallException();
             if (height < MinGridHeight) throw new GridToSmallException();
 
-            Grid = new GameGrid(width,height);
+            Grid = new GameGrid(width, height);
             RandomGenerator = new RandomGenerator(TetrominoBlockCount);
         }
 

@@ -2,7 +2,7 @@
 
 namespace Contega
 {
-    class Polyomino : IPolyomino
+    internal class Polyomino : IPolyomino
     {
         public int Width { get; }
         public int Height { get; }

@@ -1,6 +1,6 @@
 namespace Contega
 {
-    class GameGrid : IGameGrid
+    internal class GameGrid : IGameGrid
     {
         public int Width { get; }
         public int Height { get; }

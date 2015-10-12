@@ -1,5 +1,4 @@
 ﻿using Contega;
-using Contega.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest.Contega.core
@@ -34,7 +33,7 @@ namespace UnitTest.Contega.core
         public void ActiveBlock_NotNull()
         {
             var game = new ContegaGame(10, 22);
-            
+
             var block = game.ActiveBlock;
 
             Assert.IsNotNull(block);

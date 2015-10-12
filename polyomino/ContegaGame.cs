@@ -20,6 +20,11 @@ namespace Contega
             throw new System.NotImplementedException();
         }
 
+        public bool Move(object LeftRight)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void Reset()
         {
             throw new System.NotImplementedException();

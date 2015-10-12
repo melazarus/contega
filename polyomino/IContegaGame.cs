@@ -1,15 +1,26 @@
 ﻿//TODO: allow swap current block with next block
 //TODO: allow initial seed of grid with random data or with predefined set of data
 //TODO: allow lines to be added on the bottom
+//TODO: implement random bag generator
+//TODO: ghost piece
+//TODO: Implement score for T-SPIN
 namespace Contega
 {
     public interface IContegaGame
     {
+        //TODO: add option to do a Hard drop
         /// <summary>
         /// Advance the game one tick
         /// </summary>
         /// <returns>number of rows elliminated after tick</returns>
         int Tick();
+
+        /// <summary>
+        /// Moves the active Block left/right
+        /// </summary>
+        /// <param name="LeftRight"></param>
+        /// <returns></returns>
+        bool Move(object LeftRight);
 
         /// <summary>
         /// Reset the game to its initial state (score, level, grid, next block)

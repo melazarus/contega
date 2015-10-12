@@ -12,7 +12,7 @@ namespace Contega
             if(width < MinGridWidth) throw new GridToSmallException();
             if (height < MinGridHeight) throw new GridToSmallException();
 
-            Grid = new IGameGrid[width, height]();
+            Grid = new GameGrid(width,height);
         }
 
         public int Tick()

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contega", "Contega\Contega.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.tui.net", "UnitTests.tui.net\UnitTests.tui.net.csproj", "{6EDC1EDC-9C37-44A1-96B0-F407D77940CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Contega.core", "UnitTest.Contrega.core\UnitTest.Contega.core.csproj", "{D73A860D-F278-45EB-98AC-4EAF405321E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Contega.core", "UnitTest.Contega.core\UnitTest.Contega.core.csproj", "{D73A860D-F278-45EB-98AC-4EAF405321E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

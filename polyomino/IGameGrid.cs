@@ -9,7 +9,7 @@ namespace Contega
     public interface IGameGrid
     {
         int Width { get; }
-        int Heigh { set; }
+        int Height { get; }
 
         object[,] Grid { get; }
     }

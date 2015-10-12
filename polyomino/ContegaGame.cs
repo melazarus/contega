@@ -1,6 +1,6 @@
 ﻿namespace polyomino
 {
-    class ContegaGame: IContegaGame
+    internal class ContegaGame : IContegaGame
     {
         public int Tick()
         {

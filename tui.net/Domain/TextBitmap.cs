@@ -9,8 +9,8 @@ namespace tui.net
 
         public TextPixel this[int x, int y]
         {
-            get { return _pixels[y*Width + x]; }
-            set { _pixels[y*Width + x] = value; }
+            get { return _pixels[y * Width + x]; }
+            set { _pixels[y * Width + x] = value; }
         }
 
         public TextPixel this[int index]
@@ -27,22 +27,22 @@ namespace tui.net
         {
             Width = width;
             Height = height;
-            _pixels = new TextPixel[Width*Height];
+            _pixels = new TextPixel[Width * Height];
         }
 
-        public static TextBitmap GenerateFromString(string text, ConsoleColor? foreground = null,ConsoleColor? background = null)
+        public static TextBitmap GenerateFromString(string text, ConsoleColor? foreground = null, ConsoleColor? background = null)
         {
             var lines = SplitToLines(text);
             var height = lines.Length;
             var width = lines.Max(x => x.Length);
 
-            var bitmap = new TextBitmap(width,height);
-            
+            var bitmap = new TextBitmap(width, height);
+
             for (var y = 0; y < height; y++)
             {
                 for (var x = 0; x < width; x++)
                 {
-                    if (x < lines[y].Length) bitmap[x,y] = new TextPixel(lines[y][x], background, foreground);
+                    if (x < lines[y].Length) bitmap[x, y] = new TextPixel(lines[y][x], background, foreground);
                 }
             }
 

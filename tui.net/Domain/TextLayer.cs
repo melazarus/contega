@@ -1,6 +1,6 @@
 ﻿namespace tui.net
 {
-    public class TextLayer: TextBitmap
+    public class TextLayer : TextBitmap
     {
         public int OffsetX { get; set; }
 
@@ -14,6 +14,5 @@
         {
             LayerName = name;
         }
-
     }
 }

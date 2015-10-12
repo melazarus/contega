@@ -8,18 +8,26 @@ namespace Contega.Interfaces
         private readonly Random _random;
         private int _bagPointer;
 
+        /// <summary>
+        /// Create a new bag for generating random numbers
+        /// </summary>
+        /// <param name="itemsInBag"></param>
         public RandomGenerator(int itemsInBag)
         {
             if (itemsInBag < 1) throw new ArgumentException("items should be greater than 0");
             _random = new Random();
             _bag = new int[itemsInBag];
-            for (var i = 0; i < _bag.Length; i++) _bag[i] = i;
+
             Reset();
         }
 
+        /// <summary>
+        /// Reset the contents of the bag, shuffle and put the pointer back to 0
+        /// </summary>
         public void Reset()
         {
-            _bagPointer = 0;
+            for (var i = 0; i < _bag.Length; i++) _bag[i] = i;
+
             for (var i = 0; i < _bag.Length; i++)
             {
                 var ii = _random.Next(_bag.Length);
@@ -28,6 +36,8 @@ namespace Contega.Interfaces
                 _bag[i] = _bag[ii];
                 _bag[ii] = temp;
             }
+
+            _bagPointer = 0;
         }
 
         /// <summary>
@@ -50,7 +60,12 @@ namespace Contega.Interfaces
             return GetNextItemFromBag(false);
         }
 
-        private int GetNextItemFromBag(bool advance = true)
+        /// <summary>
+        /// Get the next item from the bag, optionally advance the pointer to the next value
+        /// </summary>
+        /// <param name="advance"></param>
+        /// <returns></returns>
+        private int GetNextItemFromBag(bool advance)
         {
             while (true)
             {
@@ -64,6 +79,10 @@ namespace Contega.Interfaces
             }
         }
 
+        /// <summary>
+        /// Test if the bag is empty.
+        /// </summary>
+        /// <returns></returns>
         private bool BagEmpty()
         {
             return _bagPointer >= _bag.Length;

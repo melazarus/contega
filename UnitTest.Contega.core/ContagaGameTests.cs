@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTest.Contega.core
 {
     [TestClass]
-    public class ContagaGame
+    public class ContagaGameTests
     {
         [TestMethod]
         [ExpectedException(typeof(GridToSmallException))]

@@ -35,6 +35,7 @@ namespace Contega
         IPolyomino NextBlock { get; }
 
         IPolyomino ActiveBlock { get; }
+
         //TODO: add option to do a Hard drop
         /// <summary>
         ///     Advance the game one tick
@@ -52,7 +53,7 @@ namespace Contega
         /// <summary>
         ///     Reset the game to its initial state (score, level, grid, next block)
         /// </summary>
-        void Reset();
+        void StartNew();
 
         /// <summary>
         ///     Try to rotate the active Tetromino clockwise or counter clockwise

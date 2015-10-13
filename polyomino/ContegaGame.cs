@@ -1,5 +1,6 @@
 ﻿using Contega.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Contega
 {
@@ -8,6 +9,7 @@ namespace Contega
         private const int MinGridWidth = 10;
         private const int MinGridHeight = 22;
         private const int TetrominoBlockCount = 7;
+        private List<IPolyomino> _blocks;
 
         public ContegaGame(int width, int height)
         {
@@ -22,6 +24,9 @@ namespace Contega
 
         private void LoadTetrominos()
         {
+            _blocks = new List<IPolyomino>();
+
+            _blocks.Add(new Polyomino(4, 4, new[] { 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0 }));
         }
 
         public IRandomGenerator RandomGenerator { get; set; }
@@ -37,7 +42,7 @@ namespace Contega
             throw new NotImplementedException();
         }
 
-        public void Reset()
+        public void StartNew()
         {
             throw new NotImplementedException();
         }

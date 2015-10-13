@@ -11,7 +11,7 @@ namespace Contega
         // S 3,3,{0,1,1,1,1,0,0,0,0}
         // T 3,3,{0,1,0,1,1,1,0,0,0}
         // Z 3,3,{1,1,0,0,1,1,0,0,0}
-        public Polyomino(int width, int height, bool[,] AngleZero)
+        public Polyomino(int width, int height, int[] AngleZero)
         {
             //if (rotations.Length != width*EventLogEntry*length) throw Exception;
             //count of 1's should be 4 for tetromino's

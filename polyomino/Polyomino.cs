@@ -22,8 +22,11 @@ namespace Contega
         public int Width { get; }
         public int Height { get; }
         public int Id { get; }
+        public int X { get; set; }
+        public int Y { get; set; }
+        public Rotation Rotation { get; set; }
 
-        public int[,] GetRotated(Rotation angle)
+        public int[,] GetBitmap(Rotation angle)
         {
             throw new NotImplementedException();
         }

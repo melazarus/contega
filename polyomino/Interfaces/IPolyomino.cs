@@ -6,6 +6,10 @@
         int Height { get; }
         int Id { get; }
 
-        int[,] GetRotated(Rotation angle);
+        int X { get; set; }
+        int Y { get; set; }
+        Rotation Rotation { get; set; }
+
+        int[,] GetBitmap(Rotation angle);
     }
 }

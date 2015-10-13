@@ -53,6 +53,5 @@ namespace Contega
         public bool GameOver { get; }
         public IPolyomino NextBlock { get; }
         public IPolyomino ActiveBlock { get; }
-        //TODO: store rotation and coordinates for next/active block
     }
 }
